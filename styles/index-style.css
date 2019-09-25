@@ -1,0 +1,88 @@
+body, html {
+    height: 100vh;
+}
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% auto 55%;
+    grid-template-areas: 
+        "header"
+        "article"
+        "main";
+}
+header {
+    grid-area: header;
+    background:lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Poiret One', cursive;
+}
+article {
+    grid-area: article;
+    background: lightsalmon;
+    font-family: 'Poiret One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+a {
+    margin: 10px 25px;
+    padding: 10px 20px;
+    background: salmon;
+    border-radius: 15px;
+}
+.link {
+    color: white;
+    transition: 1s;
+}
+.link:hover {
+   background: rgb(173, 60, 48);
+   transform: scale(1.15);
+}
+main {
+    grid-area: main;
+    background: lightsalmon;
+    font-family: 'Poiret One', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+div {
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px;
+    background: salmon;
+}
+.h2 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+p {
+    font-size: 20px;
+    color: white;
+}
+#blue {
+    transition: 1s ease-in-out;
+}
+#blue:hover {
+    background: blue;
+}
+#orange {
+    transition: 1s ease-in-out;
+}
+#orange:hover {
+    background: rgb(255, 123, 0);
+}
+#teal {
+    transition: 1s ease-in-out;
+}
+#teal:hover {
+    background: teal;
+}
