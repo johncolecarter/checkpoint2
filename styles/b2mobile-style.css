@@ -1,0 +1,71 @@
+@media (max-width: 812px) {
+  body,
+  html {
+    height: 100vh;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 10% auto;
+    grid-template-areas:
+      "header"
+      "article"
+      "main";
+  }
+  header {
+    grid-area: header;
+    background: rgb(247, 168, 65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 55px;
+    color: rgb(255, 136, 0);
+    font-family: "Poiret One", cursive;
+    transition: 1s;
+  }
+  h1:hover {
+    transform: rotate(360deg);
+  }
+  article {
+    grid-area: article;
+    background: rgb(247, 168, 65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    margin: 2px 20px;
+    background: rgb(218, 126, 22);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-family: "Poiret One", cursive;
+    font-size: 15px;
+    transition: 1s;
+  }
+  a:hover {
+    transform: scale(1.2);
+    background: rgb(156, 85, 3);
+  }
+  main {
+    grid-area: main;
+    background: rgb(247, 168, 65);
+    padding: 30px;
+  }
+  p {
+    font-size: 20px;
+    font-family: "Poiret One", cursive;
+    color: white;
+  }
+  div {
+    background: rgb(255, 136, 0);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 2s;
+  }
+  div:hover {
+    background: rgb(230, 139, 64);
+  }
+}

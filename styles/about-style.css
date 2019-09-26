@@ -1,0 +1,76 @@
+body,
+html {
+  height: 100vh;
+}
+body {
+  display: grid;
+  grid-template-columns: 15% auto;
+  grid-template-rows: 25% auto;
+  grid-template-areas:
+    "section header"
+    "aside main";
+}
+section {
+  grid-area: section;
+  background: rgb(208, 117, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poiret One", cursive;
+}
+a {
+  border: 5px solid rgb(59, 1, 59);
+  padding: 35px 20px;
+  border-radius: 50%;
+  background: rgb(173, 12, 173);
+  color: white;
+  font-size: 30px;
+  transition: 1s ease-in-out;
+}
+a:hover {
+  transform: scale(1.15) rotate(360deg);
+  background: rgb(97, 7, 97);
+}
+header {
+  grid-area: header;
+  background: rgb(208, 117, 231);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: "Poiret One", cursive;
+  padding: 20px;
+}
+h1 {
+  font-size: 70px;
+}
+aside {
+  grid-area: aside;
+  background: rgb(208, 117, 231);
+  font-family: "Poiret One", cursive;
+}
+main {
+  grid-area: main;
+  background: rgb(208, 117, 231);
+  padding: 20px;
+  font-family: "Poiret One", cursive;
+}
+h2 {
+  font-size: 50px;
+  color: white;
+  margin: 10px;
+}
+p {
+  font-size: 30px;
+  color: black;
+}
+h3 {
+  font-size: 40px;
+}
+li {
+  font-size: 20px;
+  color: white;
+  transition: 1s;
+}
+li:hover {
+  transform: scale(1.15);
+}

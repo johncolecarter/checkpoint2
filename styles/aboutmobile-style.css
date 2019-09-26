@@ -1,0 +1,81 @@
+@media (max-width: 812px) {
+  body,
+  html {
+    height: 100vh;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-rows: 15% auto 30%;
+    grid-template-areas:
+      "section header"
+      "main main"
+      "aside aside";
+  }
+  section {
+    grid-area: section;
+    background: rgb(208, 117, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poiret One", cursive;
+  }
+  a {
+    border: 3px solid rgb(59, 1, 59);
+    padding: 15px 10px;
+    border-radius: 50%;
+    background: rgb(173, 12, 173);
+    color: white;
+    font-size: 15px;
+    transition: 1s ease-in-out;
+  }
+  a:hover {
+    transform: scale(1.15) rotate(360deg);
+    background: rgb(97, 7, 97);
+  }
+  header {
+    grid-area: header;
+    background: rgb(208, 117, 231);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "Poiret One", cursive;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  aside {
+    grid-area: aside;
+    background: rgb(208, 117, 231);
+    font-family: "Poiret One", cursive;
+    display: flex;
+    justify-content: left;
+  }
+  main {
+    grid-area: main;
+    background: rgb(208, 117, 231);
+    padding: 10px;
+    font-family: "Poiret One", cursive;
+  }
+  h2 {
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+  }
+  p {
+    font-size: 20px;
+    color: black;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  li {
+    font-size: 15px;
+    color: white;
+    transition: 1s;
+  }
+  li:hover {
+    transform: scale(1.15);
+  }
+}

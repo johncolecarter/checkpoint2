@@ -1,0 +1,69 @@
+body,
+html {
+  height: 100vh;
+}
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 35% 10% auto;
+  grid-template-areas:
+    "header"
+    "article"
+    "main";
+}
+header {
+  grid-area: header;
+  background: rgb(115, 211, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 100px;
+  color: teal;
+  font-family: "Poiret One", cursive;
+  transition: 1s;
+}
+h1:hover {
+  transform: rotate(360deg);
+}
+article {
+  grid-area: article;
+  background: rgb(115, 211, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  margin: 2px 20px;
+  background: rgb(10, 100, 100);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-family: "Poiret One", cursive;
+  font-size: 20px;
+  transition: 1s;
+}
+a:hover {
+  transform: scale(1.2);
+  background: rgb(3, 71, 71);
+}
+main {
+  grid-area: main;
+  background: rgb(115, 211, 211);
+  padding: 30px;
+}
+p {
+  font-size: 35px;
+  font-family: "Poiret One", cursive;
+  color: white;
+}
+div {
+  background: teal;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 2s;
+}
+div:hover {
+  background: rgb(96, 185, 185);
+}
